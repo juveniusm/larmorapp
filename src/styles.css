@@ -24,8 +24,10 @@ html, body, #root {
 
 .app {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto minmax(0, 1fr) auto;
   height: 100vh;
+  min-height: 0;
+  overflow: auto;
   padding: 20px;
   gap: 16px;
   background:
@@ -157,7 +159,7 @@ html, body, #root {
 .sidebar {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: center;
   gap: 22px;
   padding: 20px 24px;
@@ -165,6 +167,8 @@ html, body, #root {
   border: 1px solid var(--border);
   border-radius: 12px;
   min-width: 130px;
+  min-height: 0;
+  overflow: hidden;
   box-shadow: 0 1px 3px rgba(31, 68, 82, 0.04);
 }
 
@@ -172,13 +176,17 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 6px;
+  min-height: 0;
 }
 
 .bar-track {
   position: relative;
   width: 30px;
-  height: 220px;
+  flex: 1 1 auto;
+  min-height: 40px;
+  max-height: 220px;
   background: var(--accent-soft);
   border: 1px solid var(--border-strong);
   border-radius: 6px;
