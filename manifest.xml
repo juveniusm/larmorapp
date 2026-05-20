@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xsi:type="ContentApp">
+  <Id>3305ab5a-d013-45f7-8298-14571c4513b9</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Proton Spin Lab</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Larmor Equation" />
+  <Description DefaultValue="Interactive Larmor equation visualization showing precession frequency as a function of field strength and gyromagnetic ratio for different nuclei." />
+  <IconUrl DefaultValue="https://juveniusm.github.io/larmorapp/assets/icon-64.png" />
+  <HighResolutionIconUrl DefaultValue="https://juveniusm.github.io/larmorapp/assets/icon-128.png" />
+  <SupportUrl DefaultValue="https://github.com/juveniusm/larmor" />
+  <AppDomains>
+    <AppDomain>https://juveniusm.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Presentation" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://juveniusm.github.io/larmorapp/index.html" />
+    <RequestedHeight>600</RequestedHeight>
+    <RequestedWidth>800</RequestedWidth>
+  </DefaultSettings>
+  <Permissions>Restricted</Permissions>
+</OfficeApp>
